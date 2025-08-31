@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Map</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- * Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- * Map -->
+    <div id="map"></div>
+
+    <!-- * Aside -->
+    <aside>
+      <!-- * Head -->
+      <div class="head">
+        <h1>Notes</h1>
+        <h1 id="add-title">New Note</h1>
+        <i id="arrow" class="bi bi-chevron-down"></i>
+      </div>
+
+      <!-- * Form -->
+      <form>
+        <div class="field">
+          <label>Title</label>
+          <input type="text" required />
+        </div>
+        <div class="field">
+          <label>Date</label>
+          <input type="date" required />
+        </div>
+        <div class="field">
+          <label>Status</label>
+          <select>
+            <option disabled selected value="">Select</option>
+            <option value="Visiting">Visiting</option>
+            <option value="Parking">Parking</option>
+            <option value="Home">Home</option>
+            <option value="Job">Job</option>
+          </select>
+        </div>
+
+        <!-- * Buttons -->
+        <div class="buttons">
+          <button id="cancel">Cancel</button>
+          <button type="submit">Add</button>
+        </div>
+      </form>
+      <ul>
+        <!-- dinamik olacak  -->
+        <!-- <li>
+          <div>
+            <p>Title</p>
+            <p>Date</p>
+            <p>Status</p>
+          </div>
+          <div class="icons">
+            <i class="bi bi-airplane-fill" id="fly-btn"></i>
+            <i class="bi bi-trash" id="delete-btn"></i>
+          </div>
+        </li> -->
+       
+      </ul>
+    </aside>
+
+    <script type="module" src="./js/main.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
