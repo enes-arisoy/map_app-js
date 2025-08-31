@@ -33,7 +33,7 @@
 
 ---
 
-## 📚 GitHub Repo ()
+## 📚 GitHub Repo https://shorturl.at/2X57E
 ---
 
 ## 📱 Preview
